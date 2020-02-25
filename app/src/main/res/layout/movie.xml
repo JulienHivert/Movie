@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_marginEnd="@dimen/movie_detail_margin"
+    android:layout_marginStart="@dimen/movie_detail_margin"
+    android:layout_marginTop="@dimen/movie_detail_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_movie_poster"
+            android:layout_width="@dimen/iv_width_size"
+            android:layout_height="@dimen/iv_height_size"
+            style="@style/iv_movie_poster"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/item_movie_release_date"
+            android:layout_width="@dimen/tv_width_size"
+            android:layout_height="wrap_content"
+            style="@style/tv_release_date_genre"
+            tools:text="2018"
+            app:layout_constraintEnd_toStartOf="@+id/item_movie_rating"
+            app:layout_constraintStart_toEndOf="@+id/item_movie_poster"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_movie_title"
+            android:layout_width="@dimen/tv_width_size"
+            android:layout_height="wrap_content"
+            style="@style/TextView_Style"
+            tools:text="Movie Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/item_movie_release_date"/>
+
+        <TextView
+            android:id="@+id/item_movie_genre"
+            android:layout_width="@dimen/tv_width_size"
+            android:layout_height="@dimen/tv_height_size"
+            style="@style/TextView_Style"
+            tools:text="Comedy, Action"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_movie_poster"
+            app:layout_constraintTop_toBottomOf="@+id/item_movie_title"/>
+
+        <TextView
+            android:id="@+id/item_movie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/tv_movie_rating"
+            tools:text="8.7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default_size">8dp</dimen>
+    <dimen name="marginTop_default_size">8dp</dimen>
+    <dimen name="text_view_alpha">0.7</dimen>
+    <dimen name="iv_width_size">96dp</dimen>
+    <dimen name="iv_height_size">0dp</dimen>
+    <dimen name="tv_width_size">0dp</dimen>
+    <dimen name="tv_height_size">18dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="movie_detail_margin">16dp</dimen>
+    <dimen name="collaspingToolbarMarginStart">48dp</dimen>
+    <dimen name="collaspingToolbarMarginEnd">64dp</dimen>
+    <dimen name="appbar_height">256dp</dimen>
+    <dimen name="tv_trailer_label">32dp</dimen>
+    <dimen name="tv_txt_size">24sp</dimen>
+    <dimen name="tv_reviewsLabel">24dp</dimen>
+    <dimen name="ll_movie_review_marginTop">8dp</dimen>
+    <dimen name="general_width">0dp</dimen>
+    <dimen name="tv_summary_label">31dp</dimen>
+    <dimen name="rt_marginTop">8dp</dimen>
+</resources>

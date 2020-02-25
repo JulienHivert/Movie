@@ -1,0 +1,101 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoActionBarAppTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Style for the main activity. -->
+
+
+    <style name="List_movie_base_style">
+        <item name="android:layout_marginEnd">@dimen/margin_default_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_default_size</item>
+        <item name="android:layout_marginTop">@dimen/margin_default_size</item>
+    </style>
+
+    <style name="TextView_Style" parent="List_movie_base_style">
+        <item name="android:layout_width">@dimen/tv_width_size</item>
+    </style>
+
+    <style name="iv_movie_poster">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="tv_release_date_genre" parent="List_movie_base_style">
+        <item name="android:alpha">@dimen/text_view_alpha</item>
+    </style>
+
+
+    <style name="tv_movie_title" parent="List_movie_base_style">
+
+    </style>
+
+    <style name="tv_movie_rating">
+        <item name="android:layout_marginTop">@dimen/margin_default_size</item>
+        <item name="android:layout_marginEnd">@dimen/margin_default_size</item>
+    </style>
+
+
+    <style name="rt_ratingbar" parent="@style/Widget.AppCompat.RatingBar.Small">
+        <item name="android:layout_marginTop">@dimen/marginTop_default_size</item>
+        <item name="android:layout_marginStart">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginEnd">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginLeft">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginRight">@dimen/movie_detail_margin</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <!-- Main style for the movie details activity. -->
+    <style name="mainStyle">
+        <item name="android:layout_marginStart">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginEnd">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginLeft">@dimen/movie_detail_margin</item>
+        <item name="android:layout_marginRight">@dimen/movie_detail_margin</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+    </style>
+
+    <style name="textview_with_alpha" parent="mainStyle">
+        <item name="android:alpha">@dimen/text_view_alpha</item>
+    </style>
+
+    <!--case by case -->
+    <style name="tv_movieDetailsTitle" parent="mainStyle">
+        <item name="android:layout_marginTop">@dimen/marginTop_default_size</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="tv_movieDetailGenres" parent="textview_with_alpha">
+        <item name="android:layout_marginTop">@dimen/marginTop_default_size</item>
+    </style>
+
+    <style name="tv_movieDetailsOverview" parent="textview_with_alpha">
+        <item name="android:layout_marginTop">@dimen/marginTop_default_size</item>
+    </style>
+
+    <style name="tv_summaryLabel" parent="mainStyle">
+        <item name="android:layout_marginTop">@dimen/tv_summary_label</item>
+    </style>
+
+    <style name="tv_movieDetailsReleaseDate" parent="textview_with_alpha">
+        <item name="android:layout_marginTop">@dimen/marginTop_default_size</item>
+    </style>
+
+    <style name="tv_trailer_label" parent="mainStyle">
+        <item name="android:layout_marginTop">@dimen/tv_trailer_label</item>
+    </style>
+
+    <style name="tv_reviewLabel" parent="mainStyle">
+        <item name="android:layout_marginTop">@dimen/tv_reviewsLabel</item>
+    </style>
+
+</resources>
